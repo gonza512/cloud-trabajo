@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.err
+build-log.txt
+.DS_Store
+target/
+.idea/
+*.iml
+.vscode/
+capturas/*.png.bak
+
+# Secretos del lab AWS
+scripts/aws-outputs.env
+scripts/paste-*.txt
+backend/src/main/resources/application.properties

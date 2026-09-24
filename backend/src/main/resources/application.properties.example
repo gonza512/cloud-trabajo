@@ -1,0 +1,21 @@
+spring.application.name=hospital
+
+# RDS MySQL (AWS Academy us-east-1)
+# Copia a application.properties (ese archivo NO se sube a GitHub)
+spring.datasource.url=jdbc:mysql://hospital-dsy1107-mysql.ctbzhktilybp.us-east-1.rds.amazonaws.com:3306/db_hospital_vm?useSSL=true&requireSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=hospitaladmin
+spring.datasource.password=HospitalAdmin123!
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+springdoc.api-docs.enabled=true
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/doc/swagger-ui.html
+
+# Cognito JWT
+spring.security.oauth2.resourceserver.jwt.issuer-uri=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_7yYrEJl8g
+
+app.cors.allowed-origins=http://localhost:5173,http://localhost:4173
